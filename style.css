@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-size: 15px;
+}
+
+button {
+  font-size: 15px;
+  border: none;
+  outline: none;
+  padding: 5px;
+  background-color: #f2f2f2;
+  width: 120px;
+  font-family: "Lexend Deca", sans-serif;
+  height: 40px;
+  border-radius: 20px;
+  transition: all 0.2s ease-in-out;
+}
+
+p {
+  color: rgba(255, 255, 255, 0.75);
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  word-spacing: 4px;
+  line-height: 1.3rem;
+  padding-bottom: 50px;
+  padding-right: 15px;
+}
+
+h2 {
+  color: #f2f2f2;
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+  font-size: 40px;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.container {
+  position: absolute;
+  max-height: 100vh;
+  display: flex;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container div {
+  width: 280px;
+}
+
+img {
+  width: 70px;
+  padding-bottom: 25px;
+}
+
+.card-1 {
+  background-color: #e38826;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.card-1 .btn {
+  color: #e38826;
+}
+
+.card-1 .btn:hover {
+  color: #f2f2f2;
+  background-color: transparent;
+  border: 2px solid #fff;
+}
+
+.card-2 {
+  background-color: #006970;
+}
+
+.card-2 .btn {
+  color: #006970;
+}
+
+.card-2 .btn:hover {
+  color: #f2f2f2;
+  background-color: transparent;
+  border: 2px solid #fff;
+}
+
+.card-3 {
+  background-color: #004241;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card-3 .btn {
+  color: #004241;
+}
+
+.card-3 .btn:hover {
+  color: #f2f2f2;
+  background-color: transparent;
+  border: 2px solid #fff;
+}
+
+.card-1, .card-2, .card-3 {
+  padding: 25px;
+  justify-content: center;
+  width: 300px;
+  height: 400px;
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    height: 100vh;
+  }
+
+  .container {
+    height: auto;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .card-1 {
+    background-color: #e38826;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+  }
+
+  .card-3 {
+    background-color: #004241;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 10px;
+  }
+}/*# sourceMappingURL=style.css.map */
